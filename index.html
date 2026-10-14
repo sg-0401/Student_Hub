@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Hub - Exp 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="login" class="screen active">
+      <div class="login-card">
+        <h1>Student Hub</h1>
+        <p>Login to continue</p>
+        <form id="loginForm">
+          <label>Email</label>
+          <input id="email" type="email" placeholder="Enter your email">
+          <label>Password</label>
+          <input id="password" type="password" placeholder="Enter your password">
+          <button type="submit">LOGIN</button>
+          <small id="loginMessage"></small>
+        </form>
+      </div>
+    </section>
+
+    <section id="home" class="screen">
+      <header>
+        <div>
+          <h1>Student Hub</h1>
+          <p>Welcome, Shreeya!</p>
+        </div>
+        <button id="themeBtn" class="theme-btn">🌙 Dark</button>
+      </header>
+      <div class="stats">
+        <article><span>Total Tasks</span><strong>5</strong></article>
+        <article><span>Completed</span><strong class="green">3</strong></article>
+        <article><span>Pending</span><strong class="orange">2</strong></article>
+      </div>
+      <h2>Today's Tasks</h2>
+      <div class="tasks">
+        <label><input type="checkbox"> Complete assignment</label>
+        <label><input type="checkbox"> Study Artificial Intelligence</label>
+        <label><input type="checkbox"> Complete GitHub project</label>
+      </div>
+      <button id="profileBtn" class="primary">VIEW PROFILE</button>
+    </section>
+
+    <section id="profile" class="screen">
+      <h1>My Profile</h1>
+      <div class="avatar">SG</div>
+      <h2>Shreeya Gondhalekar</h2>
+      <p>BE Information Technology</p>
+      <div class="info">Student ID: 12345</div>
+      <button class="primary" id="backBtn">BACK TO HOME</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
